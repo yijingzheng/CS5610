@@ -1,0 +1,53 @@
+.self-introduction-container {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    align-items: center;
+}
+
+.header,.header-text,.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    flex-direction: column;
+    font-weight: 900;
+}
+
+.profile {
+    width: 30%;
+}
+
+.welcome {
+    font-size: 12.5vw;
+    text-shadow: 1vw 1vw #FF8551;
+    color: #9029fe;
+}
+
+.self-introduction-container h1 {
+    font-size: 5vw;
+}
+
+.content-text-left {
+    text-align: center;
+    width: 100%;
+}
+
+.self-introduction-container li {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .header,.content {
+        flex-direction: column;
+    }
+    .profile {
+        width: 50%;
+    }
+}

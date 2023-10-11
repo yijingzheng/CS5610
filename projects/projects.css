@@ -1,0 +1,19 @@
+.project-container {
+    position: relative;
+    top: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+.project-container h1 {
+    font-size: 32px;
+    font-weight: 900;
+    border-bottom: 2px solid #B99B6B;
+}
+
+.project-container li {
+    font-size: 20px;
+    line-height: 1.5;
+}

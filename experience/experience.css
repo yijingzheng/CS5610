@@ -1,0 +1,73 @@
+.experience-container {
+    position: relative;
+    top: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+.experience-container h1 {
+    font-size: 48px;
+    font-weight: 900;
+    border-bottom: 2px solid #B99B6B;
+}
+
+.experience-container h2 {
+    font-size: 32px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.experience-container h3 {
+    font-size: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.education p, .work-experience li {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.work-linkedin, .work-neu {
+    display: grid;
+    grid-template-areas:
+    "img company company"
+    "img title title"
+    "img text text";
+    grid-template-columns: 1fr 4fr;
+}
+
+.work-experience h2 {
+    grid-area: company;
+}
+
+.work-experience h3 {
+    grid-area: title;
+}
+
+.work-experience img {
+    grid-area: img;
+    align-self: center;
+}
+
+.work-experience ul {
+    grid-area: text;
+}
+
+@media (max-width: 700px) {
+    .work-linkedin, .work-neu {
+        display: grid;
+        grid-template-areas:
+        "img"
+        "company"
+        "title"
+        "text";
+        grid-template-columns: 1fr;
+    }
+
+    .work-experience img,.work-experience h2,.work-experience h3 {
+        justify-self: center;
+    }
+}
